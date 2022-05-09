@@ -30,3 +30,18 @@
 [rtd-badge]:                https://readthedocs.org/projects/ukca-certwizard/badge/?version=latest
 [rtd-link]:                 https://ukca-certwizard.readthedocs.io/en/latest/?badge=latest
 [sk-badge]:                 https://scikit-hep.org/assets/images/Scikit--HEP-Project-blue.svg
+
+
+## Certificate process
+
+```mermaid
+sequenceDiagram
+Alice->>UKCA Wizard: Can I have/renew a certificate?
+UKCA Wizard->>Local RA: New request from Alic
+Local RA->>Alice: Let's check who you are
+Alice->>Local RA: I am a student/researcher/academic, here is my ID.
+Local RA->>UKCA Wizard: Alice is who she says she is.
+UKCA Wizard->>UKCA Admins: New request to sign off
+UKCA Admins->>UKCA Wizard: I will sign off the request
+UKCA Wizard->>Alice: Request signed off, here is your certificate.
+```

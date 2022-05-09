@@ -1,0 +1,7 @@
+output_dir: /tmp/certwizard/
+
+hosts:
+  - name: host.example.com
+    current_certificate: ./hostcert.pem
+    current_certificate_key: ./hostkey.key
+    pin: 1234

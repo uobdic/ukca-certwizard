@@ -1,0 +1,36 @@
+[general]
+# Certificate location for generating new host requests (.pem format)
+# authcert = ~/.globus/usercert.pem
+
+# Private key location for generating new host requests (.pem format)
+# authkey = ~/.globus/userkey.pem
+
+# Debug info
+verbose = false
+
+# Email address for annual renewal reminders.
+# This may be different from the one stored in "authcert"
+# email = email@address-here.co.uk
+
+# Directory to store keys for bulk requests
+#keydir=
+
+# Directory into which to place retrieved certificates in bulk requests
+# Defaults to keydir if not specified
+#certdir=
+
+[ca]
+# Location of the live CA Server
+server = "cwiz-live.ca.ngs.ac.uk:443"
+
+# Default keysize: 2048 strongly recommended
+keybits = 2048
+
+# The Institution's RA (of the form /C=UK/O=eScience/OU=XXX/L=YYY) that
+# will be used to approve your request and which will form most
+# of the requested certificate's DN
+# ra = /C=UK/O=eScience/OU=XXX/L=RAL
+
+[ssl]
+# Directory containing the trusted roots store
+cacertdir = "/etc/grid-security/certificates"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CSR>
+    <Request> {{ request }} </Request>
+    <PIN> {{ pin }} </PIN>
+    <Email> {{ email }} </Email>
+    <PublicKey> {{ public_key }} </PublicKey>
+    <Version>1</Version>
+</CSR>

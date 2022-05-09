@@ -37,6 +37,9 @@ classifiers = [
 dynamic = ["version"]
 
 dependencies = [
+    "pyOpenSSL",
+    "requests",
+    "typer",
     "typing_extensions >=3.7; python_version<'3.8'",
 ]
 
@@ -93,3 +96,6 @@ messages_control.disable = [
   "line-too-long",
   "wrong-import-position",
 ]
+
+[project.scripts]
+ukca = "ukca_certwizard.main:main"
